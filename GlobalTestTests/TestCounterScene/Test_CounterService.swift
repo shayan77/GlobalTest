@@ -13,7 +13,6 @@ final class CounterServiceTests: XCTestCase {
     var sut: CounterService?
     var nextPathJson: Data?
     var responseCodeJson: Data?
-    var path: String?
     
     override func setUp() {
         let bundle = Bundle(for: type(of: self))
@@ -58,7 +57,6 @@ final class CounterServiceTests: XCTestCase {
             switch result {
             case .success(let path):
                 nextPath = path
-                self.path = path.path ?? ""
             case .failure:
                 XCTFail()
             }
@@ -66,10 +64,10 @@ final class CounterServiceTests: XCTestCase {
         
         // Then
         wait(for: [expectation], timeout: 5)
-        XCTAssertTrue(nextPath?.path == "")
+        XCTAssertTrue(nextPath?.path == "http://localhost:8000/34e0a89e-a381-11eb-93a1-acde48001122/")
     }
     
-    func test_getCategories() {
+    func test_getResponseCode() {
         
         // Given
         let urlSessionMock = URLSessionMock()
@@ -80,7 +78,7 @@ final class CounterServiceTests: XCTestCase {
         var responseCode: ResponseCode?
         
         // When
-        sut?.getResponseCode(nextPath: self.path ?? "", completionHandler: { (result) in
+        sut?.getResponseCode(nextPath: "http://localhost:8000/34e0a89e-a381-11eb-93a1-acde48001122/", completionHandler: { (result) in
             defer {
                 expectation.fulfill()
             }
@@ -94,6 +92,6 @@ final class CounterServiceTests: XCTestCase {
         
         // Then
         wait(for: [expectation], timeout: 5)
-        XCTAssertTrue(responseCode?.responseCode == "124136724")
+        XCTAssertTrue(responseCode?.responseCode == "9c20ca90-6b44-433e-9d4c-bdabe9268bc7")
     }
 }
