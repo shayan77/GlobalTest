@@ -27,6 +27,7 @@
 		833C19B526303F790058C5C1 /* NotFoundErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C19B426303F790058C5C1 /* NotFoundErrorModel.swift */; };
 		833C19E8263053DE0058C5C1 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C19E7263053DE0058C5C1 /* UserDefault.swift */; };
 		833C19F02630548A0058C5C1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C19EF2630548A0058C5C1 /* DataManager.swift */; };
+		838210242632ADB600168C61 /* Test_NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838210232632ADB600168C61 /* Test_NetworkConnection.swift */; };
 		83B40E14262FE55400AE7086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B40E13262FE55400AE7086 /* AppDelegate.swift */; };
 		83B40E1D262FE55500AE7086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B40E1C262FE55500AE7086 /* Assets.xcassets */; };
 		83B40E20262FE55500AE7086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B40E1E262FE55500AE7086 /* LaunchScreen.storyboard */; };
@@ -81,6 +82,7 @@
 		833C19B426303F790058C5C1 /* NotFoundErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundErrorModel.swift; sourceTree = "<group>"; };
 		833C19E7263053DE0058C5C1 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		833C19EF2630548A0058C5C1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		838210232632ADB600168C61 /* Test_NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_NetworkConnection.swift; sourceTree = "<group>"; };
 		83B40E10262FE55400AE7086 /* GlobalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B40E13262FE55400AE7086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B40E1C262FE55500AE7086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				83B4D42B2631CF7C002D89E3 /* Test_CounterService.swift */,
+				838210232632ADB600168C61 /* Test_NetworkConnection.swift */,
 			);
 			path = TestCounterScene;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				83B4D4492631D147002D89E3 /* URLSessionMock.swift in Sources */,
 				83B4D4532631D185002D89E3 /* RequestManagerMock.swift in Sources */,
 				83B4D4582631D1AC002D89E3 /* ResponseValidatorMock.swift in Sources */,
+				838210242632ADB600168C61 /* Test_NetworkConnection.swift in Sources */,
 				83B4D42C2631CF7C002D89E3 /* Test_CounterService.swift in Sources */,
 				83B4D44E2631D168002D89E3 /* URLSessionDataTaskMock.swift in Sources */,
 			);

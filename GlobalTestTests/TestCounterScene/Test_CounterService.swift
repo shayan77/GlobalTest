@@ -46,7 +46,7 @@ final class CounterServiceTests: XCTestCase {
         urlSessionMock.data = nextPathJson
         let mockRequestManager = RequestManagerMock(session: urlSessionMock, validator: MockResponseValidator())
         sut = CounterService(requestManager: mockRequestManager)
-        let expectation = XCTestExpectation(description: "Async products test")
+        let expectation = XCTestExpectation(description: "Async next path test")
         var nextPath: NextPath?
         
         // When
@@ -74,7 +74,7 @@ final class CounterServiceTests: XCTestCase {
         urlSessionMock.data = responseCodeJson
         let mockRequestManager = RequestManagerMock(session: urlSessionMock, validator: MockResponseValidator())
         sut = CounterService(requestManager: mockRequestManager)
-        let expectation = XCTestExpectation(description: "Async categories test")
+        let expectation = XCTestExpectation(description: "Async response code test")
         var responseCode: ResponseCode?
         
         // When
